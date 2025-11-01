@@ -28,7 +28,7 @@ pushtoBr:
 createRepo:
 	gh repo create Andrew96RR/FerSales_Bussiness_app_front --private --source=. --remote=origin --push
 
-checRemote:
+checkRemote:
 	git remote -v
 
 repoExist:
@@ -36,7 +36,12 @@ repoExist:
 	git remote add origin https://github.com/Andrew96RR/GestorDeVentasApp.git
 	git pull
 	git checkout main -f
-	git branch --set-upstream-to origin/main	
+	git branch --set-upstream-to origin/main
 
-.PHONY: clone gitAA gitLogin gitCommit gitRef gorigin pushtoMain pushtoBr createRepo
-
+pull:
+	git remote add origin https://github.com/Andrew96RR/GestorDeVentasApp.git
+	git pull
+	git checkout main -f
+	git branch --set-upstream-to origin/main
+		
+.PHONY: clone gitAA gitLogin gitCommit gitRef gorigin pushtoMain pushtoBr createRepo repoExist
