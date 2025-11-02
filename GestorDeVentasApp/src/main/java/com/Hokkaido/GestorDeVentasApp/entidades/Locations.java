@@ -6,7 +6,7 @@ import jakarta.persistence.Id;
 @Entity
 public class Locations {
 	@Id
-	private int location_id;
+	private Long location_id;
 	private String country;
 	private String state;
 	private String city;
@@ -17,12 +17,7 @@ public class Locations {
 	public Locations() {
 		super();
 	}
-	public int getLocation_id() {
-		return location_id;
-	}
-	public void setLocation_id(int location_id) {
-		this.location_id = location_id;
-	}
+
 	public String getCountry() {
 		return country;
 	}

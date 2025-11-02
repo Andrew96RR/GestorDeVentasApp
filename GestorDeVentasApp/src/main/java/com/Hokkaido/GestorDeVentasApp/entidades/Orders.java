@@ -6,9 +6,9 @@ import jakarta.persistence.Id;
 @Entity
 public class Orders {
 	@Id
-	private int order_id;
-	private double value;
-	private double tax;
+	private Long order_id;
+	private Double value;
+	private Double tax;
 	private String date_order;
 	private String date_delivered;
 	private int supplier_id;
@@ -17,12 +17,7 @@ public class Orders {
 	public Orders() {
 		super();
 	}
-	public int getOrder_id() {
-		return order_id;
-	}
-	public void setOrder_id(int order_id) {
-		this.order_id = order_id;
-	}
+
 	public double getValue() {
 		return value;
 	}

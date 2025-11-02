@@ -6,23 +6,18 @@ import jakarta.persistence.Id;
 @Entity
 public class Sales {
 	@Id
-	private int sale_id;
+	private Long sale_id;
 	private int branch_id;
 	private int quantity;
-	private double tax;
-	private double subtotal;
-	private double discount;
-	private double value;
+	private Double tax;
+	private Double subtotal;
+	private Double discount;
+	private Double value;
 	
 	public Sales() {
 		super();
 	}
-	public int getSale_id() {
-		return sale_id;
-	}
-	public void setSale_id(int sale_id) {
-		this.sale_id = sale_id;
-	}
+
 	public int getBranch_id() {
 		return branch_id;
 	}

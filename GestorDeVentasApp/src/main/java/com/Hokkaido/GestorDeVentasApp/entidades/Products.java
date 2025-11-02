@@ -6,21 +6,16 @@ import jakarta.persistence.Id;
 @Entity
 public class Products {
 	@Id
-	private int product_id;
+	private Long product_id;
 	private int supplier_id;
 	private String product_name;
-	private double product_weight;
-	private double product_price;
+	private Double product_weight;
+	private Double product_price;
 	
 	public Products() {
 		super();
 	}
-	public int getProduct_id() {
-		return product_id;
-	}
-	public void setProduct_id(int product_id) {
-		this.product_id = product_id;
-	}
+
 	public int getSupplier_id() {
 		return supplier_id;
 	}

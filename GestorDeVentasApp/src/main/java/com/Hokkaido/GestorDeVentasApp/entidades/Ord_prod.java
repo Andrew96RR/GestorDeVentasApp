@@ -9,7 +9,7 @@ public class Ord_prod {
 	private int order_id;
 	private int product_id;
 	private int quantity;
-	private double subtotal;
+	private Double subtotal;
 	
 	public Ord_prod() {
 		super();

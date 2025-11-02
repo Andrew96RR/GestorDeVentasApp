@@ -6,7 +6,7 @@ import jakarta.persistence.Id;
 @Entity
 public class Branches {
 	@Id
-	private int branch_id;
+	private Long branch_id;
 	private String branch_name;
 	private String contact_name;
 	private int employee_count;
@@ -20,13 +20,6 @@ public class Branches {
 		super();
 	}
 
-	public int getBranch_id() {
-		return branch_id;
-	}
-
-	public void setBranch_id(int branch_id) {
-		this.branch_id = branch_id;
-	}
 
 	public String getBranch_name() {
 		return branch_name;

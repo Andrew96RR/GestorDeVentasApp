@@ -6,7 +6,7 @@ import jakarta.persistence.Id;
 @Entity
 public class Managers {
 	@Id
-	private int manager_id;
+	private Long manager_id;
 	
 	private String first_name;
 	private String last_name;
@@ -17,12 +17,7 @@ public class Managers {
 	public Managers() {
 		super();
 	}
-	public int getManager_id() {
-		return manager_id;
-	}
-	public void setManager_id(int manager_id) {
-		this.manager_id = manager_id;
-	}
+
 	public String getFirst_name() {
 		return first_name;
 	}

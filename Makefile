@@ -5,8 +5,8 @@ gitAA:
 	git add .
 
 gitLogin:
-	git config --global user.email "barajakevyns@gmail.com"
-	git config --global user.name "kevyn19bar"
+	git config --global user.email "andresmrojasm@hotmail.com"
+	git config --global user.name "Andrew96RR"
 
 gitCommit:
 	git commit -m "myNewCommit"
@@ -21,6 +21,14 @@ pushtoMain:
 	git branch -M main
 	git push -u origin main
 
+pushtoMainSf:
+	git stash push -m "My local changes before pulling main"
+	git pull origin main
+	git stash pop
+	git add .
+	git commit -m "Merged remote updates with my local changes"
+	git push origin main
+	
 pushtoBr:
 	git checkout -b my-feature-branch
 	git push -u origin my-feature-branch
@@ -38,10 +46,40 @@ repoExist:
 	git checkout main -f
 	git branch --set-upstream-to origin/main
 
-pull:
+forcepush1:
+	@git add .
+	@git commit -m "Local work before merging remote" || echo "No changes to commit"
+	@git pull origin main --allow-unrelated-histories || echo "Merge might need manual resolution"
+
+forcepush2:
+	@git add .
+	@git commit -m "Resolved merge conflicts" || echo "No changes to commit"
+	@git push origin main -f
+
+pull1:
 	git remote add origin https://github.com/Andrew96RR/GestorDeVentasApp.git
 	git pull
 	git checkout main -f
 	git branch --set-upstream-to origin/main
+
+pull2:
+	git status
+	git checkout main
+	git remote -v
+	git fetch origin
+	git reset --hard origin/main
+	git branch backup-local
+	git branch --set-upstream-to=origin/main main
+	git log --oneline
+
+pullNB:
+	git status
+	git checkout main
+	git remote -v
+	git fetch origin
+	git reset --hard origin/main
+	git branch backup-local
+	git branch --set-upstream-to=origin/main main
+	git log --oneline
 		
-.PHONY: clone gitAA gitLogin gitCommit gitRef gorigin pushtoMain pushtoBr createRepo repoExist
+.PHONY: clone gitAA gitLogin gitCommit gitRef gorigin pushtoMain pushtoBr createRepo repoExist pull1 pull2 pullNB

@@ -6,7 +6,7 @@ import jakarta.persistence.Id;
 @Entity
 public class Warehouses {
 	@Id
-	private int warehouse_id;
+	private Long warehouse_id;
 	private String warehouse_name;
 	private int location_id;
 	private int manager_id;
@@ -15,12 +15,7 @@ public class Warehouses {
 	public Warehouses() {
 		super();
 	}
-	public int getWarehouse_id() {
-		return warehouse_id;
-	}
-	public void setWarehouse_id(int warehouse_id) {
-		this.warehouse_id = warehouse_id;
-	}
+
 	public String getWarehouse_name() {
 		return warehouse_name;
 	}
