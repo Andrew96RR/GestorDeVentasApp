@@ -5,8 +5,8 @@ gitAA:
 	git add .
 
 gitLogin:
-	git config --global user.email "andresmrojasm@hotmail.com"
-	git config --global user.name "Andrew96RR"
+	git config --global user.email "barajakevyns@gmail.com"
+	git config --global user.name "kevyn19bar"
 
 gitCommit:
 	git commit -m "myNewCommit"
