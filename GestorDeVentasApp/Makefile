@@ -82,13 +82,19 @@ pullNB:
 	git branch --set-upstream-to=origin/main main
 	git log --oneline
 
-PoPPull:
+pullPop:
 	git stash push -m "My local changes before pulling main"
-	git pull origin main
+	git status
+	git checkout main
+	git remote -v
 	git fetch origin
-	git branch --set-upstream-to=origin/main main
-	git log --oneline
 	git stash pop
 	git add .
-		
-.PHONY: clone gitAA gitLogin gitCommit gitRef gorigin pushtoMain pushtoBr createRepo repoExist pull1 pull2 pullNB 
+	git log --oneline
+
+stashAp:
+	git stash apply stash@{0}
+	git stash pop stash@{0} 
+
+
+.PHONY: clone gitAA gitLogin gitCommit gitRef gorigin pushtoMain pushtoBr createRepo repoExist pull1 pull2 pullNB stashAp
