@@ -30,8 +30,8 @@ pushtoMainSf:
 	git push origin main
 	
 pushtoBr:
-	git checkout -b my-feature-branch
-	git push -u origin my-feature-branch
+	git checkout -b RamaAR96
+	git push -u origin RamaAR96
 
 createRepo:
 	gh repo create Andrew96RR/FerSales_Bussiness_app_front --private --source=. --remote=origin --push
@@ -81,5 +81,14 @@ pullNB:
 	git branch backup-local
 	git branch --set-upstream-to=origin/main main
 	git log --oneline
+
+PoPPull:
+	git stash push -m "My local changes before pulling main"
+	git pull origin main
+	git fetch origin
+	git branch --set-upstream-to=origin/main main
+	git log --oneline
+	git stash pop
+	git add .
 		
-.PHONY: clone gitAA gitLogin gitCommit gitRef gorigin pushtoMain pushtoBr createRepo repoExist pull1 pull2 pullNB
+.PHONY: clone gitAA gitLogin gitCommit gitRef gorigin pushtoMain pushtoBr createRepo repoExist pull1 pull2 pullNB 
