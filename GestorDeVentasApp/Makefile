@@ -18,7 +18,7 @@ gorigin:
 	git remote add origin https://github.com/Andrew96RR/GestorDeVentasApp.git
 
 pushtoMain:
-	git branch -M main
+	git checkout main
 	git push -u origin main
 
 pushtoMainSf:
