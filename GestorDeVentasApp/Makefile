@@ -93,8 +93,8 @@ pullPop:
 	git log --oneline
 
 stashAp:
-	git stash apply stash@{0}
-	git stash pop stash@{0} 
+	git merge --abort
+    git stash apply 
 
 
 .PHONY: clone gitAA gitLogin gitCommit gitRef gorigin pushtoMain pushtoBr createRepo repoExist pull1 pull2 pullNB stashAp

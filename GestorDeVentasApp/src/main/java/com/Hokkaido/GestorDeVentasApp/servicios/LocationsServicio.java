@@ -1,5 +1,10 @@
 package com.Hokkaido.GestorDeVentasApp.servicios;
 
-public interface LocationsServicio {
+import java.util.List;
 
+import com.Hokkaido.GestorDeVentasApp.entidades.Locations;
+
+public interface LocationsServicio {
+	
+	List<Locations> getAllLocations();
 }
