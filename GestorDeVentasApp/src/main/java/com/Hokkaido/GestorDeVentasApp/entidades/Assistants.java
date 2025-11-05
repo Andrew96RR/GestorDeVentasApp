@@ -30,7 +30,6 @@ public class Assistants {
 		super();
 	}
 
-
 	public String getFirst_name() {
 		return first_name;
 	}
@@ -54,5 +53,29 @@ public class Assistants {
 	}
 	public void setEmail(String email) {
 		this.email = email;
+	}
+	
+	public Long getAssistant_id() {
+		return assistant_id;
+	}
+
+	public void setAssistant_id(Long assistant_id) {
+		this.assistant_id = assistant_id;
+	}
+
+	public Warehouses getWarehouse_id() {
+		return warehouse_id;
+	}
+
+	public void setWarehouse_id(Warehouses warehouse_id) {
+		this.warehouse_id = warehouse_id;
+	}
+
+	public Branches getBranch_id() {
+		return branch_id;
+	}
+
+	public void setBranch_id(Branches branch_id) {
+		this.branch_id = branch_id;
 	}
 }

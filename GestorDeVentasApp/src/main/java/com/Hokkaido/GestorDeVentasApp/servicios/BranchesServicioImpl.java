@@ -16,8 +16,12 @@ public class BranchesServicioImpl implements BranchesServicio{
 	
 	@Override
 	public List<Branches> getAllBranches() {
-		
 		return branchesRepositorio.findAll();
+	}
+
+	@Override
+	public void delBranch(Long id) {
+		branchesRepositorio.deleteById(id);
 	}
 
 }

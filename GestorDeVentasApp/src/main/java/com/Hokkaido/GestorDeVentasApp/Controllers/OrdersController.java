@@ -17,7 +17,7 @@ public class OrdersController {
 	private OrdensServicio ordensServicio;
 	
 	@GetMapping("/lisOrders")
-	public String getAllAssistants(Model model) {
+	public String getAllOrders(Model model) {
 		try {
 			List<Orders> lisOrders = ordensServicio.getAllOrders();
 			model.addAttribute("orders", lisOrders);

@@ -16,7 +16,7 @@ public class SuppliersController {
 	private SuppliersServicio suppliersServicio;
 	
 	@GetMapping("/listSuppl")
-	private String getAllAssistants (Model model){
+	private String getAllSuppliers(Model model){
 		try {
 			List<Suppliers> lisSuppliers = suppliersServicio.gitAllSuppliers();
 			model.addAttribute("suppliers", lisSuppliers);

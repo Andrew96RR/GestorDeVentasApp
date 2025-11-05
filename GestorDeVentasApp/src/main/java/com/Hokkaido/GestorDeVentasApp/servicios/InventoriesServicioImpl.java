@@ -20,4 +20,10 @@ public class InventoriesServicioImpl implements InventoriesServicio {
 		return inventoriesRepositorio.findAll();
 	}
 
+	@Override
+	public void delInventory(Long id) {
+		inventoriesRepositorio.deleteById(id);
+		
+	}
+
 }

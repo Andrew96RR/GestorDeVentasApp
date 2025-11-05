@@ -17,7 +17,7 @@ public class SalesController {
 	private SalesServicio salesServicio;
 	
 	@GetMapping("/listSales")
-	private String getAllAssistants(Model model) {
+	private String getAllSales(Model model) {
 		try {
 			List<Sales> lisSales = salesServicio.gitAllsales();
 			model.addAttribute("sales", lisSales);

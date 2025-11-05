@@ -9,12 +9,61 @@ public class Branches {
 	private Long branch_id;
 	private String branch_name;
 	private String contact_name;
-	private int employee_count;
+	private Long employee_count;
 	private String branch_address;
-	private int manager_id;
-	private int warehouse_id;
-	private int inventory_id;
-	private int location_id;
+	private Long manager_id;
+	public Long getBranch_id() {
+		return branch_id;
+	}
+
+
+	public void setBranch_id(Long branch_id) {
+		this.branch_id = branch_id;
+	}
+
+
+	public Long getManager_id() {
+		return manager_id;
+	}
+
+
+	public void setManager_id(Long manager_id) {
+		this.manager_id = manager_id;
+	}
+
+
+	public Long getWarehouse_id() {
+		return warehouse_id;
+	}
+
+
+	public void setWarehouse_id(Long warehouse_id) {
+		this.warehouse_id = warehouse_id;
+	}
+
+
+	public Long getInventory_id() {
+		return inventory_id;
+	}
+
+
+	public void setInventory_id(Long inventory_id) {
+		this.inventory_id = inventory_id;
+	}
+
+
+	public Long getLocation_id() {
+		return location_id;
+	}
+
+
+	public void setLocation_id(Long location_id) {
+		this.location_id = location_id;
+	}
+
+	private Long warehouse_id;
+	private Long inventory_id;
+	private Long location_id;
 	
 	public Branches() {
 		super();
@@ -37,11 +86,11 @@ public class Branches {
 		this.contact_name = contact_name;
 	}
 
-	public int getEmployee_count() {
+	public Long getEmployee_count() {
 		return employee_count;
 	}
 
-	public void setEmployee_count(int employee_count) {
+	public void setEmployee_count(Long employee_count) {
 		this.employee_count = employee_count;
 	}
 
@@ -53,38 +102,7 @@ public class Branches {
 		this.branch_address = branch_address;
 	}
 
-	public int getManager_id() {
-		return manager_id;
-	}
 
-	public void setManager_id(int manager_id) {
-		this.manager_id = manager_id;
-	}
-
-	public int getWarehouse_id() {
-		return warehouse_id;
-	}
-
-	public void setWarehouse_id(int warehouse_id) {
-		this.warehouse_id = warehouse_id;
-	}
-
-	public int getInventory_id() {
-		return inventory_id;
-	}
-
-	public void setInventory_id(int inventory_id) {
-		this.inventory_id = inventory_id;
-	}
-
-	public int getLocation_id() {
-		return location_id;
-	}
-
-	public void setLocation_id(int location_id) {
-		this.location_id = location_id;
-	}
-	
 	
 
 }

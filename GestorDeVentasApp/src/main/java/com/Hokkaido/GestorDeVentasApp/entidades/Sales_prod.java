@@ -6,29 +6,29 @@ import jakarta.persistence.Id;
 @Entity
 public class Sales_prod {
 	@Id
-	private int sale_id;
-	private int product_id;
-	private int quantity;
+	private Long sale_id;
+	private Long product_id;
+	private Long quantity;
 	
 	public Sales_prod() {
 		super();
 	}
-	public int getSale_id() {
+	public Long getSale_id() {
 		return sale_id;
 	}
-	public void setSale_id(int sale_id) {
+	public void setSale_id(Long sale_id) {
 		this.sale_id = sale_id;
 	}
-	public int getProduct_id() {
+	public Long getProduct_id() {
 		return product_id;
 	}
-	public void setProduct_id(int product_id) {
+	public void setProduct_id(Long product_id) {
 		this.product_id = product_id;
 	}
-	public int getQuantity() {
+	public Long getQuantity() {
 		return quantity;
 	}
-	public void setQuantity(int quantity) {
+	public void setQuantity(Long quantity) {
 		this.quantity = quantity;
 	}
 	

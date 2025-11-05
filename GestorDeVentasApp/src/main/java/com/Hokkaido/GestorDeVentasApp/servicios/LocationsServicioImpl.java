@@ -18,6 +18,11 @@ public class LocationsServicioImpl implements LocationsServicio{
 	public List<Locations> getAllLocations() {
 		return locationsRepositorio.findAll();
 	}
+
+	@Override
+	public void delLocation(Long id) {
+		locationsRepositorio.deleteById(id);	
+	}
 	
 
 }

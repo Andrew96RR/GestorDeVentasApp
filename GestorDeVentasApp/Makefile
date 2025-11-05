@@ -9,7 +9,7 @@ gitLogin:
 	git config --global user.name "Andrew96RR"
 
 gitCommit:
-	git commit -m "myNewCommit"
+	git commit -m "RealCommit"
 
 gitRef:
 	git reflog

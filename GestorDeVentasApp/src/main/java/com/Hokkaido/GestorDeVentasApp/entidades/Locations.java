@@ -7,6 +7,13 @@ import jakarta.persistence.Id;
 public class Locations {
 	@Id
 	private Long location_id;
+	public Long getLocation_id() {
+		return location_id;
+	}
+
+	public void setLocation_id(Long location_id) {
+		this.location_id = location_id;
+	}
 	private String country;
 	private String state;
 	private String city;

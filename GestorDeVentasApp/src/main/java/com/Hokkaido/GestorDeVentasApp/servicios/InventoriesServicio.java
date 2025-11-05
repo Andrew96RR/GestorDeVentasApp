@@ -7,5 +7,6 @@ import com.Hokkaido.GestorDeVentasApp.entidades.Inventories;
 public interface InventoriesServicio {
 
 	List<Inventories> getAllInventories();
+	void delInventory(Long id);
 
 }

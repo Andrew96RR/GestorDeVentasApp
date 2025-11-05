@@ -8,4 +8,6 @@ public interface BranchesServicio {
 
 	List<Branches> getAllBranches();
 	
+	void delBranch(Long id);
+	
 }

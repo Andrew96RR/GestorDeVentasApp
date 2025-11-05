@@ -11,6 +11,22 @@ public class Inventories {
 	@Id
 	private Long inventory_id;
 	
+	public Long getInventory_id() {
+		return inventory_id;
+	}
+
+
+
+	public void setInventory_id(Long inventory_id) {
+		this.inventory_id = inventory_id;
+	}
+
+
+
+	public void setCapacity_volume(Double capacity_volume) {
+		this.capacity_volume = capacity_volume;
+	}
+
 	private String inventory_name;
 	private Double capacity_volume;
 	private Date creation_date;

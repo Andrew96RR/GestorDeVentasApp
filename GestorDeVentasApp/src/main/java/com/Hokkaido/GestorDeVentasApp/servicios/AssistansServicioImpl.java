@@ -11,6 +11,8 @@ import com.Hokkaido.GestorDeVentasApp.repositorios.AssistansRepositorio;
 @Service
 public class AssistansServicioImpl implements AssistansServicio {
 
+	
+
 	@Autowired
 	private AssistansRepositorio assistansRepositorio ;
 	
@@ -18,6 +20,11 @@ public class AssistansServicioImpl implements AssistansServicio {
 	public List<Assistants> GetAllAssistants() {
 		
 		return assistansRepositorio.findAll();
+	}
+	
+	@Override
+	public void delAssistant(Long id) {
+		assistansRepositorio.deleteById(id);
 	}
 
 }

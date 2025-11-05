@@ -17,7 +17,7 @@ public class ProductsController {
 	private ProductsServicio productsServicio;
 	
 	@GetMapping("/listProduc")
-	public String getAllAssistants(Model model) {
+	public String getAllProducts(Model model) {
 		try {
 			List<Products> lisproducts=productsServicio.getAllProducts();
 			model.addAttribute("products", lisproducts);

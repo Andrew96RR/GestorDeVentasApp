@@ -6,35 +6,35 @@ import jakarta.persistence.Id;
 @Entity
 public class Inv_prod {
 	@Id
-	private int inventory_id;
-	private int product_id;
-	private int Quantity;
+	private Long inventory_id;
+	private Long product_id;
+	private Long Quantity;
 	
 	public Inv_prod() {
 		super();
 	}
 
-	public int getInventory_id() {
+	public Long getInventory_id() {
 		return inventory_id;
 	}
 
-	public void setInventory_id(int inventory_id) {
+	public void setInventory_id(Long inventory_id) {
 		this.inventory_id = inventory_id;
 	}
 
-	public int getProduct_id() {
+	public Long getProduct_id() {
 		return product_id;
 	}
 
-	public void setProduct_id(int product_id) {
+	public void setProduct_id(Long product_id) {
 		this.product_id = product_id;
 	}
 
-	public int getQuantity() {
+	public Long getQuantity() {
 		return Quantity;
 	}
 
-	public void setQuantity(int quantity) {
+	public void setQuantity(Long quantity) {
 		Quantity = quantity;
 	}
 	

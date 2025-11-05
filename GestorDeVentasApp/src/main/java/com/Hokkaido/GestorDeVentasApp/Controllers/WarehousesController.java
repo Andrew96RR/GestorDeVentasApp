@@ -16,7 +16,7 @@ public class WarehousesController {
 	private WarehousesServicio warehousesServicio;
 	
 	@GetMapping("/listWareho")
-	public String getAllAssistants (Model model) {
+	public String getAllWarehouses(Model model) {
 		try {
 			List<Warehouses> listWarehouses = warehousesServicio.gitAllWarehouses();
 			model.addAttribute("warehouses", listWarehouses);

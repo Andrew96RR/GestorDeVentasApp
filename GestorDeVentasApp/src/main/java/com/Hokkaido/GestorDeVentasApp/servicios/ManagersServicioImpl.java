@@ -18,6 +18,11 @@ public class ManagersServicioImpl implements ManagersServicio{
 	public List<Managers> getAllManagers() {
 		return managersRepositorio.findAll();
 	}
+
+	@Override
+	public void delManager(Long id) {
+		managersRepositorio.deleteById(id);
+	}
 	
 
 }
