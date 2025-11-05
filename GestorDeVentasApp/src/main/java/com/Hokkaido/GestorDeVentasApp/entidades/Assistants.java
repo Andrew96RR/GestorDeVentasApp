@@ -21,15 +21,14 @@ public class Assistants {
 	
 	@ManyToOne(fetch = FetchType.LAZY)
 	@JoinColumn(name = "warehouse_id")
-	private Warehouses warehouse;
+	private Warehouses warehouse_id;
 	@ManyToOne(fetch = FetchType.LAZY)
 	@JoinColumn(name = "branch_id")
-	private Branches branch;
+	private Branches branch_id;
 	
 	public Assistants() {
 		super();
 	}
-	
 
 
 	public String getFirst_name() {

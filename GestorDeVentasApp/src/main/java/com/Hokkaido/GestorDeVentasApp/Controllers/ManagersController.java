@@ -25,7 +25,7 @@ public class ManagersController {
 		catch(Exception e) {
 			System.out.println("Error: "+e);
 		}
-		return "/entities/assist/Assistants";
+		return "/entities/manager/Managers";
 	}
 	
 	

@@ -30,7 +30,7 @@ pushtoMainSf:
 	git push origin main
 	
 pushtoBr:
-	git checkout -b RamaAR96
+	git checkout RamaAR96
 	git push -u origin RamaAR96
 
 createRepo:
