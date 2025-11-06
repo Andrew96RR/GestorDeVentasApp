@@ -8,9 +8,16 @@ public class Warehouses {
 	@Id
 	private Long warehouse_id;
 	private String warehouse_name;
-	private int location_id;
-	private int manager_id;
-	private int inventory_id;
+	private Long location_id;
+	private Long manager_id;
+	public Long getWarehouse_id() {
+		return warehouse_id;
+	}
+
+	public void setWarehouse_id(Long warehouse_id) {
+		this.warehouse_id = warehouse_id;
+	}
+	private Long inventory_id;
 	
 	public Warehouses() {
 		super();
@@ -22,22 +29,22 @@ public class Warehouses {
 	public void setWarehouse_name(String warehouse_name) {
 		this.warehouse_name = warehouse_name;
 	}
-	public int getLocation_id() {
+	public Long getLocation_id() {
 		return location_id;
 	}
-	public void setLocation_id(int location_id) {
+	public void setLocation_id(Long location_id) {
 		this.location_id = location_id;
 	}
-	public int getManager_id() {
+	public Long getManager_id() {
 		return manager_id;
 	}
-	public void setManager_id(int manager_id) {
+	public void setManager_id(Long manager_id) {
 		this.manager_id = manager_id;
 	}
-	public int getInventory_id() {
+	public Long getInventory_id() {
 		return inventory_id;
 	}
-	public void setInventory_id(int inventory_id) {
+	public void setInventory_id(Long inventory_id) {
 		this.inventory_id = inventory_id;
 	}
 	

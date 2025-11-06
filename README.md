@@ -1,2 +1,6 @@
 # GestorDeVentasApp
+
 GestorDeVentasApp
+
+FOR PRESENTATION
+

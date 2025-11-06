@@ -7,6 +7,7 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
+import jakarta.persistence.Transient;
 
 @Entity
 public class Assistants {
@@ -26,6 +27,14 @@ public class Assistants {
 	@JoinColumn(name = "branch_id")
 	private Branches branch_id;
 	
+	@Transient
+    private Long warehouseIdValue;
+
+    @Transient
+    private Long branchIdValue;
+	
+	
+
 	public Assistants() {
 		super();
 	}
@@ -78,4 +87,28 @@ public class Assistants {
 	public void setBranch_id(Branches branch_id) {
 		this.branch_id = branch_id;
 	}
+
+	public Long getWarehouseIdValue() {
+        if (warehouse_id != null) {
+            return warehouse_id.getWarehouse_id();
+        }
+        return warehouseIdValue;
+    }
+
+    public void setWarehouseIdValue(Long warehouseIdValue) {
+        this.warehouseIdValue = warehouseIdValue;
+    }
+	
+	public Long getBranchIdValue() {
+		if (branch_id != null) {
+            return branch_id.getBranch_id();
+        }
+        return branchIdValue;
+	}
+
+	public void setBranchIdValue(Long branchIdValue) {
+		this.branchIdValue = branchIdValue;
+	}
+	
+
 }

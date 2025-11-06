@@ -77,8 +77,6 @@ pullNB:
 	git checkout main
 	git remote -v
 	git fetch origin
-	git reset --hard origin/main
-	git branch backup-local
 	git branch --set-upstream-to=origin/main main
 	git log --oneline
 

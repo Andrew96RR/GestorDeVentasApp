@@ -8,5 +8,10 @@ public interface AssistansServicio {
 	List<Assistants> GetAllAssistants();
 	
 	void delAssistant(Long id);
-
+	
+	 Assistants getAssistantById(Long id);    
+	    
+	 void saveOrUpdateAssistant(Assistants assistant);
+	    
+	 void deleteAssistant(Long id);
 }
