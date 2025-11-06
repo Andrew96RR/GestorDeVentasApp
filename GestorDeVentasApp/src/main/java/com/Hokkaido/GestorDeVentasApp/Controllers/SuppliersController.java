@@ -16,10 +16,10 @@ public class SuppliersController {
 	private SuppliersServicio suppliersServicio;
 	
 	@GetMapping("/listSuppl")
-	private String getAllSuppliers(Model model){
+	private String getAllAssistants (Model model){
 		try {
 			List<Suppliers> lisSuppliers = suppliersServicio.gitAllSuppliers();
-			model.addAttribute("suppliers", lisSuppliers);
+			model.addAttribute("Suppliers", lisSuppliers);
 		} catch (Exception e) {
 			System.out.println("Error: "+e);
 		}

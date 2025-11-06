@@ -6,6 +6,6 @@ import com.Hokkaido.GestorDeVentasApp.entidades.Orders;
 
 public interface OrdensServicio {
 	
-	List<Orders> getAllOrders();
-
+	List<Orders>getAllOrders();
+	
 }

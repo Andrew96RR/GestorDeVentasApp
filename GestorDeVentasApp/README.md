@@ -1,2 +1,0 @@
-# GestorDeVentasApp
-GestorDeVentasApp

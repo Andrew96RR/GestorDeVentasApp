@@ -10,18 +10,13 @@ import com.Hokkaido.GestorDeVentasApp.repositorios.OrdesRepositorio;
 
 @Service
 public class OrdensServicioImpl implements OrdensServicio {
-
+	
 	@Autowired
 	private OrdesRepositorio ordesRepositorio;
-
+	
 	@Override
-	public List<Orders> getAllOrders() {
+	public List<Orders> getAllOrders(){		
 		return ordesRepositorio.findAll();
 	}
-
-	
-
-
-	
 
 }

@@ -8,12 +8,12 @@ public class Inv_prod {
 	@Id
 	private Long inventory_id;
 	private Long product_id;
-	private Long Quantity;
+	private int Quantity;
 	
 	public Inv_prod() {
 		super();
 	}
-
+	
 	public Long getInventory_id() {
 		return inventory_id;
 	}
@@ -30,11 +30,11 @@ public class Inv_prod {
 		this.product_id = product_id;
 	}
 
-	public Long getQuantity() {
+	public int getQuantity() {
 		return Quantity;
 	}
 
-	public void setQuantity(Long quantity) {
+	public void setQuantity(int quantity) {
 		Quantity = quantity;
 	}
 	

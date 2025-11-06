@@ -1,11 +1,14 @@
 package com.Hokkaido.GestorDeVentasApp.entidades;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
 @Entity
 public class Suppliers {
 	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long supplier_id;
 	
 	private String name;
@@ -16,6 +19,17 @@ public class Suppliers {
 		super();
 	}
 	
+	
+	public Long getSupplier_id() {
+		return supplier_id;
+	}
+
+
+	public void setSupplier_id(Long supplier_id) {
+		this.supplier_id = supplier_id;
+	}
+
+
 	public String getName() {
 		return name;
 	}

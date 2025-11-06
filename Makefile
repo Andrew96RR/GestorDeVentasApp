@@ -2,7 +2,7 @@ clone:
 	git clone https://github.com/Andrew96RR/GestorDeVentasApp.git
 
 gitAA:
-	git add .
+	git add . --all
 
 gitLogin:
 	git config --global user.email "

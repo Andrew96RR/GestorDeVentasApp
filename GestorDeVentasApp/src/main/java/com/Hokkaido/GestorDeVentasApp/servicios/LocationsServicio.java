@@ -7,5 +7,4 @@ import com.Hokkaido.GestorDeVentasApp.entidades.Locations;
 public interface LocationsServicio {
 	
 	List<Locations> getAllLocations();
-	void delLocation(Long id);
 }

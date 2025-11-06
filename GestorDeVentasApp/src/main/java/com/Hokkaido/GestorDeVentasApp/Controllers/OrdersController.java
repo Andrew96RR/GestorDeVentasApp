@@ -16,11 +16,11 @@ public class OrdersController {
 	@Autowired
 	private OrdensServicio ordensServicio;
 	
-	@GetMapping("/lisOrders")
-	public String getAllOrders(Model model) {
+	@GetMapping("/listOrders")
+	public String getAllAssistants(Model model) {
 		try {
 			List<Orders> lisOrders = ordensServicio.getAllOrders();
-			model.addAttribute("orders", lisOrders);
+			model.addAttribute("Orders", lisOrders);
 		} catch (Exception e) {
 			System.out.println("Error: "+e);
 		}

@@ -8,4 +8,5 @@ import com.Hokkaido.GestorDeVentasApp.entidades.Branches;
 @Repository
 public interface BranchesRepositorio extends JpaRepository<Branches, Long>{
 	
+
 }

@@ -1,19 +1,16 @@
 package com.Hokkaido.GestorDeVentasApp.entidades;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
 @Entity
 public class Locations {
 	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long location_id;
-	public Long getLocation_id() {
-		return location_id;
-	}
-
-	public void setLocation_id(Long location_id) {
-		this.location_id = location_id;
-	}
+	
 	private String country;
 	private String state;
 	private String city;
@@ -23,6 +20,14 @@ public class Locations {
 	
 	public Locations() {
 		super();
+	}
+	
+	public Long getLocation_id() {
+		return location_id;
+	}
+
+	public void setLocation_id(Long location_id) {
+		this.location_id = location_id;
 	}
 
 	public String getCountry() {

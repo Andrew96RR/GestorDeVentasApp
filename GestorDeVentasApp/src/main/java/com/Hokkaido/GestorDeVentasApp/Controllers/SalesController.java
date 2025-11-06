@@ -17,10 +17,10 @@ public class SalesController {
 	private SalesServicio salesServicio;
 	
 	@GetMapping("/listSales")
-	private String getAllSales(Model model) {
+	private String getAllAssistants(Model model) {
 		try {
 			List<Sales> lisSales = salesServicio.gitAllsales();
-			model.addAttribute("sales", lisSales);
+			model.addAttribute("Sales", lisSales);
 		} catch (Exception e) {
 			System.out.println("Error: "+e);
 		}

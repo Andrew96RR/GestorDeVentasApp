@@ -1,66 +1,21 @@
 package com.Hokkaido.GestorDeVentasApp.entidades;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
 @Entity
 public class Branches {
 	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long branch_id;
+	
 	private String branch_name;
 	private String contact_name;
-	private Long employee_count;
+	private int employee_count;
 	private String branch_address;
 	private Long manager_id;
-	public Long getBranch_id() {
-		return branch_id;
-	}
-
-
-	public void setBranch_id(Long branch_id) {
-		this.branch_id = branch_id;
-	}
-
-
-	public Long getManager_id() {
-		return manager_id;
-	}
-
-
-	public void setManager_id(Long manager_id) {
-		this.manager_id = manager_id;
-	}
-
-
-	public Long getWarehouse_id() {
-		return warehouse_id;
-	}
-
-
-	public void setWarehouse_id(Long warehouse_id) {
-		this.warehouse_id = warehouse_id;
-	}
-
-
-	public Long getInventory_id() {
-		return inventory_id;
-	}
-
-
-	public void setInventory_id(Long inventory_id) {
-		this.inventory_id = inventory_id;
-	}
-
-
-	public Long getLocation_id() {
-		return location_id;
-	}
-
-
-	public void setLocation_id(Long location_id) {
-		this.location_id = location_id;
-	}
-
 	private Long warehouse_id;
 	private Long inventory_id;
 	private Long location_id;
@@ -69,6 +24,13 @@ public class Branches {
 		super();
 	}
 
+	public Long getBranch_id() {
+		return branch_id;
+	}
+
+	public void setBranch_id(Long branch_id) {
+		this.branch_id = branch_id;
+	}
 
 	public String getBranch_name() {
 		return branch_name;
@@ -86,11 +48,11 @@ public class Branches {
 		this.contact_name = contact_name;
 	}
 
-	public Long getEmployee_count() {
+	public int getEmployee_count() {
 		return employee_count;
 	}
 
-	public void setEmployee_count(Long employee_count) {
+	public void setEmployee_count(int employee_count) {
 		this.employee_count = employee_count;
 	}
 
@@ -102,7 +64,36 @@ public class Branches {
 		this.branch_address = branch_address;
 	}
 
+	public Long getManager_id() {
+		return manager_id;
+	}
 
+	public void setManager_id(Long manager_id) {
+		this.manager_id = manager_id;
+	}
+
+	public Long getWarehouse_id() {
+		return warehouse_id;
+	}
+
+	public void setWarehouse_id(Long warehouse_id) {
+		this.warehouse_id = warehouse_id;
+	}
+
+	public Long getInventory_id() {
+		return inventory_id;
+	}
+
+	public void setInventory_id(Long inventory_id) {
+		this.inventory_id = inventory_id;
+	}
+
+	public Long getLocation_id() {
+		return location_id;
+	}
+
+	public void setLocation_id(Long location_id) {
+		this.location_id = location_id;
+	}
 	
-
 }

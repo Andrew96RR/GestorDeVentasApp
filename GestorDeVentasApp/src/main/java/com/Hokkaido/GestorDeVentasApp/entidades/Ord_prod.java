@@ -6,28 +6,28 @@ import jakarta.persistence.Id;
 @Entity
 public class Ord_prod {
 	@Id
-	private int order_id;
-	private int product_id;
+	private Long order_id;
+	private Long product_id;
 	private int quantity;
 	private Double subtotal;
 	
 	public Ord_prod() {
 		super();
 	}
-
-	public int getOrder_id() {
+	
+	public Long getOrder_id() {
 		return order_id;
 	}
 
-	public void setOrder_id(int order_id) {
+	public void setOrder_id(Long order_id) {
 		this.order_id = order_id;
 	}
 
-	public int getProduct_id() {
+	public Long getProduct_id() {
 		return product_id;
 	}
 
-	public void setProduct_id(int product_id) {
+	public void setProduct_id(Long product_id) {
 		this.product_id = product_id;
 	}
 
@@ -39,13 +39,12 @@ public class Ord_prod {
 		this.quantity = quantity;
 	}
 
-	public double getSubtotal() {
+	public Double getSubtotal() {
 		return subtotal;
 	}
 
-	public void setSubtotal(double subtotal) {
+	public void setSubtotal(Double subtotal) {
 		this.subtotal = subtotal;
 	}
 	
-
 }

@@ -17,10 +17,10 @@ public class ProductsController {
 	private ProductsServicio productsServicio;
 	
 	@GetMapping("/listProduc")
-	public String getAllProducts(Model model) {
+	public String getAllAssistants(Model model) {
 		try {
 			List<Products> lisproducts=productsServicio.getAllProducts();
-			model.addAttribute("products", lisproducts);
+			model.addAttribute("Products", lisproducts);
 		} catch (Exception e) {
 			System.out.println("Error: "+e);
 		}

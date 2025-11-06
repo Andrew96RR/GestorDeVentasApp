@@ -1,20 +1,16 @@
 package com.Hokkaido.GestorDeVentasApp.entidades;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
 @Entity
 public class Managers {
 	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long manager_id;
 	
-	public Long getManager_id() {
-		return manager_id;
-	}
-
-	public void setManager_id(Long manager_id) {
-		this.manager_id = manager_id;
-	}
 	private String first_name;
 	private String last_name;
 	private String address;
@@ -23,6 +19,14 @@ public class Managers {
 	
 	public Managers() {
 		super();
+	}
+
+	public Long getManager_id() {
+		return manager_id;
+	}
+
+	public void setManager_id(Long manager_id) {
+		this.manager_id = manager_id;
 	}
 
 	public String getFirst_name() {
