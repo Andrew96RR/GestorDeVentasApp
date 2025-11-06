@@ -17,7 +17,7 @@ public class Assistants {
 	private String email;
 	private Long warehouse_id;
 	private Long branch_id;
-	
+//hola 	
 	public Assistants() {
 		super();
 	}
